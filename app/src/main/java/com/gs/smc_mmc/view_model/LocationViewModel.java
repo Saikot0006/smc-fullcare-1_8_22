@@ -1,0 +1,16 @@
+package com.gs.smc_mmc.view_model;
+
+import android.location.Location;
+
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModel;
+
+public class LocationViewModel extends ViewModel {
+    private MutableLiveData<Location> locationMutableLiveData = new MutableLiveData<>();
+    public void setLocationMutableLiveData(Location location){
+        locationMutableLiveData.setValue(location);
+    }
+    public MutableLiveData<Location> getLocationMutableLiveData() {
+        return locationMutableLiveData;
+    }
+}

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    tools:context=".fragment.filterFragment">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/textcolor"
+            android:layout_marginTop="15dp"
+            android:text="@string/date" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                android:id="@+id/pwFilterFirstID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/background_edit_text"
+                android:paddingLeft="14dp"
+                android:drawablePadding="7dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center|start"
+                android:hint="DD/MM/YY"
+                android:inputType="date"
+                android:textCursorDrawable="@drawable/color_cursor"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/textcolor"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="TO" />
+
+            <TextView
+                android:id="@+id/pwFilterSecondID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/background_edit_text"
+                android:paddingLeft="16dp"
+                android:drawablePadding="7dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center|start"
+                android:hint="DD/MM/YY"
+                android:inputType="date"
+                android:textCursorDrawable="@drawable/color_cursor"/>
+
+
+
+        </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/textcolor"
+        android:layout_marginTop="15dp"
+        android:text="@string/age" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <EditText
+            android:id="@+id/pwFilterFirstAgeID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/background_edit_text"
+            android:paddingLeft="14dp"
+            android:drawablePadding="7dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center|start"
+            android:hint="Year"
+            android:inputType="number"
+            android:textCursorDrawable="@drawable/color_cursor"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/textcolor"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="TO" />
+
+        <EditText
+            android:id="@+id/pwFilterSecondAgeID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/background_edit_text"
+            android:paddingLeft="16dp"
+            android:drawablePadding="7dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center|start"
+            android:hint="Year"
+            android:inputType="number"
+            android:textCursorDrawable="@drawable/color_cursor"/>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/filterResetID"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reset"
+                android:background="@drawable/custom_button_apply"
+                android:layout_margin="10dp"
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/filterApplyID"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_apply"
+                android:text="Apply"
+                android:layout_margin="10dp"
+                android:padding="10dp"/>
+
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

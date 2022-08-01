@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_nevigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.gs.smc_mmc.fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            app:popUpTo="@+id/loginFragment"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PW_RegistrationFragment"
+        android:name="com.gs.smc_mmc.fragment.PW_RegistrationFragment"
+        android:label="fragment_p_w__registration"
+        tools:layout="@layout/fragment_p_w__registration" />
+    <fragment
+        android:id="@+id/PW_RecordFragment"
+        android:name="com.gs.smc_mmc.fragment.PW_RecordFragment"
+        android:label="fragment_p_w__record"
+        tools:layout="@layout/fragment_p_w__record" >
+        <action
+            android:id="@+id/action_PW_RecordFragment_to_PW_RegistrationFragment"
+            app:destination="@id/PW_RegistrationFragment" />
+        <action
+            android:id="@+id/action_PW_RecordFragment_to_filterFragment"
+            app:destination="@id/filterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.gs.smc_mmc.fragment.filterFragment"
+        android:label="fragment_filter"
+        tools:layout="@layout/fragment_filter" >
+        <action
+            app:popUpTo="@+id/filterFragment"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_filterFragment_to_PW_RecordFragment"
+            app:destination="@id/PW_RecordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.gs.smc_mmc.fragment.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_PW_RecordFragment"
+            app:destination="@id/PW_RecordFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_stockRecordsFragment"
+            app:destination="@id/stockRecordsFragment" />
+        <action
+            app:popUpTo="@+id/homeFragment"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stockUpdateFragment"
+        android:name="com.gs.smc_mmc.fragment.stockUpdateFragment"
+        android:label="fragment_stock_update"
+        tools:layout="@layout/fragment_stock_update" />
+    <fragment
+        android:id="@+id/patientInfoFragment"
+        android:name="com.gs.smc_mmc.fragment.patientInfoFragment"
+        android:label="fragment_patient_info"
+        tools:layout="@layout/fragment_patient_info" />
+    <fragment
+        android:id="@+id/providerInfoFragment"
+        android:name="com.gs.smc_mmc.fragment.providerInfoFragment"
+        android:label="fragment_provider_info"
+        tools:layout="@layout/fragment_provider_info" />
+    <fragment
+        android:id="@+id/stockRecordsFragment"
+        android:name="com.gs.smc_mmc.fragment.stockRecordsFragment"
+        android:label="fragment_stock_records"
+        tools:layout="@layout/fragment_stock_records" >
+        <action
+            android:id="@+id/action_stockRecordsFragment_to_stockUpdateFragment"
+            app:destination="@id/stockUpdateFragment" />
+        <action
+            android:id="@+id/action_stockRecordsFragment_to_providerInfoFragment"
+            app:destination="@id/providerInfoFragment" />
+        <action
+            android:id="@+id/action_stockRecordsFragment_to_stockFilterFragment"
+            app:destination="@id/stockFilterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/curren_LocationFragment"
+        android:name="com.gs.smc_mmc.fragment.Curren_LocationFragment"
+        android:label="fragment_curren__location"
+        tools:layout="@layout/fragment_curren__location" />
+    <fragment
+        android:id="@+id/stockFilterFragment"
+        android:name="com.gs.smc_mmc.fragment.StockFilterFragment"
+        android:label="fragment_stock_filter"
+        tools:layout="@layout/fragment_stock_filter" >
+        <action
+            app:popUpTo="@+id/stockFilterFragment"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_stockFilterFragment_to_stockRecordsFragment"
+            app:destination="@id/stockRecordsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pwRegistrationEditFragment"
+        android:name="com.gs.smc_mmc.PwRegistrationEditFragment"
+        android:label="fragment_pw_registration_edit"
+        tools:layout="@layout/fragment_pw_registration_edit" />
+</navigation>

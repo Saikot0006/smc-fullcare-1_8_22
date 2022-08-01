@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.patientInfoFragment">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <include
+                  android:layout_width="match_parent"
+                  android:layout_height="150dp"
+                  layout="@layout/topbar" />
+
+
+          </RelativeLayout>
+
+
+
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_margin="10dp">
+
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Sayeda Hani"
+                  android:textStyle="bold"
+                  android:textSize="18sp"
+                  android:id="@+id/pw_viewName"/>
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Age"/>
+
+                  <EditText
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:inputType="number"
+                      android:focusable="false"
+                      android:id="@+id/pw_viewAge"/>
+
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Mobile Number"/>
+
+                  <EditText
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:inputType="phone"
+                      android:focusable="false"
+                      android:id="@+id/pwViewMobile" />
+
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Division"/>
+
+                  <EditText
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:inputType="text"
+                      android:focusable="false"
+                      android:id="@+id/pwViewDivision"/>
+
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="District"/>
+
+                  <EditText
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:inputType="text"
+                      android:focusable="false"
+                      android:id="@+id/pwViewDistrict"/>
+
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Thana"/>
+
+                  <EditText
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:inputType="text"
+                      android:focusable="false"
+                      android:id="@+id/pwViewThana"/>
+
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Who is Purchesing"/>
+
+                  <EditText
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:inputType="text"
+                      android:focusable="false"
+                      android:id="@+id/pwViewPurcher"/>
+
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Pregnancy"/>
+
+                  <EditText
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:inputType="number"
+                      android:focusable="false"
+                      android:id="@+id/pwViewPregnancy"/>
+
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Health Condition"/>
+
+                  <EditText
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:inputType="text"
+                      android:focusable="false"
+                      android:id="@+id/pwViewHealth"/>
+
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="LMP"/>
+
+                  <EditText
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:inputType="date"
+                      android:focusable="false"
+                      android:id="@+id/pwViewLmp"/>
+
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:orientation="vertical">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="EDD"/>
+
+                  <EditText
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:inputType="date"
+                      android:focusable="false"
+                      android:id="@+id/pwViewEdd"/>
+
+
+              </LinearLayout>
+
+
+
+          </LinearLayout>
+
+
+
+
+      </LinearLayout>
+
+  </ScrollView>
+
+</LinearLayout>

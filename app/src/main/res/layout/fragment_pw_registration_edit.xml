@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PwRegistrationEditFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/topbar"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginTop="15dp"
+                    android:text="Provider(Name and Type)" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/background_edit_text_default"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/providerEditTypenameSP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <!--  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/validatecolor"
+                      android:text="@string/enterID"
+                      android:visibility="gone"
+                      android:textSize="12sp"/>
+  -->
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/fullname" />
+
+                <EditText
+                    android:id="@+id/fullEditnameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@drawable/background_edit_text"
+                    android:paddingLeft="16dp"
+                    android:drawablePadding="7dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|start"
+                    android:hint="Your Name"
+                    android:inputType="text"
+                    android:textCursorDrawable="@drawable/color_cursor"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/validatecolor"
+                    android:text="@string/enterName"
+                    android:visibility="gone"
+                    android:textSize="12sp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1.5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/textcolor"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/age" />
+
+                    <EditText
+                        android:id="@+id/ageEditET"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/background_edit_text"
+                        android:paddingLeft="16dp"
+                        android:drawablePadding="7dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|start"
+                        android:inputType="number"
+                        android:textCursorDrawable="@drawable/color_cursor"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="3.5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/textcolor"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/number" />
+
+                    <EditText
+                        android:id="@+id/mobileEdtET"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:hint="Mobile Number"
+                        android:background="@drawable/background_edit_text"
+                        android:paddingLeft="16dp"
+                        android:drawablePadding="7dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|start"
+                        android:inputType="phone"
+                        android:textCursorDrawable="@drawable/color_cursor"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/textcolor"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/division" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_edit_text_default"
+                        android:orientation="vertical">
+
+                        <Spinner
+                            android:id="@+id/pwEditDivisionSP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/textcolor"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/district" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_edit_text_default">
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/pwEditDistrictSP"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/thana" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/background_edit_text_default">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pwEditThanaSP"/>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/textcolor"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/Corporation" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_edit_text_default">
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/pwEditCorporationSP"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/textcolor"
+                        android:layout_marginTop="15dp"
+                        android:text="City Corporation/Pouroshobha Name" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/textcolor"
+                        android:id="@+id/pwEditPouroshobhaET"
+                        android:background="@drawable/background_edit_text"/>
+
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginTop="15dp"
+                    android:text="Is Urban " />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/background_edit_text_default">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pwEditUrbanSP"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/purchasing" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/background_edit_text_default">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pwEditWhoPurchasingSP"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/textcolor"
+                        android:layout_marginTop="15dp"
+                        android:text="No. of pregnancy" />
+
+                    <EditText
+                        android:id="@+id/noEditPregnancyID"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/background_edit_text"
+                        android:paddingLeft="16dp"
+                        android:drawablePadding="7dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|start"
+                        android:inputType="number"
+                        android:textCursorDrawable="@drawable/color_cursor"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/textcolor"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/health_condition" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_edit_text_default">
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/pwEditHealthConditionSP"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="2.5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/textcolor"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/lmp" />
+
+                    <EditText
+                        android:id="@+id/pwEditLMPID"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/background_edit_text"
+                        android:paddingLeft="16dp"
+                        android:drawablePadding="7dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|start"
+                        android:hint="DD/MM/YY"
+                        android:inputType="date"
+                        android:textCursorDrawable="@drawable/color_cursor"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2.5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/textcolor"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/edd" />
+
+                    <EditText
+                        android:id="@+id/pwEditEDDID"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:hint="DD/MM/YY"
+                        android:background="@drawable/background_edit_text"
+                        android:paddingLeft="16dp"
+                        android:drawablePadding="7dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|start"
+                        android:inputType="date"
+                        android:textCursorDrawable="@drawable/color_cursor"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginTop="15dp"
+                    android:text="Registration Date" />
+
+                <EditText
+                    android:id="@+id/pwEditRegDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:hint="DD/MM/YY"
+                    android:background="@drawable/background_edit_text"
+                    android:paddingLeft="16dp"
+                    android:drawablePadding="7dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|start"
+                    android:inputType="date"
+                    android:textCursorDrawable="@drawable/color_cursor"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:clickable="true"
+                android:id="@+id/saveBtnID"
+                android:layout_margin="20dp"
+                android:padding="15dp"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
