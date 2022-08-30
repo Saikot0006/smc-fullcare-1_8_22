@@ -271,7 +271,6 @@ public class LoginFragment extends Fragment {
 
                         locationSetting();
 
-
                         deleteAllData();
 
                         //  Toast.makeText(getContext(), "Hell", Toast.LENGTH_SHORT).show();
